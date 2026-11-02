@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NovaFlow - The next-generation creative workspace and intelligent design platform for modern teams." />
+  <title>NovaFlow &mdash; Next-Gen Creative Workspace</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- BACKGROUND GLOW EFFECTS -->
+  <div class="glow-sphere glow-sphere-1" aria-hidden="true"></div>
+  <div class="glow-sphere glow-sphere-2" aria-hidden="true"></div>
+  <div class="glow-sphere glow-sphere-3" aria-hidden="true"></div>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-shapes"></i></span>
+        <span class="logo-text">Nova<span>Flow</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#showcase" class="nav-link">Solutions</a></li>
+          <li class="nav-item"><a href="#metrics" class="nav-link">Impact</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+        <div class="nav-mobile-actions">
+          <a href="#pricing" class="btn btn-outline btn-sm">Sign In</a>
+          <a href="#pricing" class="btn btn-primary btn-sm">Get Started Free</a>
+        </div>
+      </nav>
+
+      <!-- Desktop Action Buttons & Theme Switcher -->
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark mode">
+          <i class="fa-solid fa-sun light-icon"></i>
+          <i class="fa-solid fa-moon dark-icon"></i>
+        </button>
+        <a href="#pricing" class="btn btn-link nav-signin">Sign In</a>
+        <a href="#pricing" class="btn btn-primary nav-cta">
+          <span>Get Started Free</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="container hero-container">
+        <!-- Hero Badge -->
+        <div class="hero-badge animate-fade-down">
+          <span class="badge-pulse"></span>
+          <span class="badge-tag">NovaFlow 3.0</span>
+          <span class="badge-text">Intelligent collaborative canvas is live</span>
+          <i class="fa-solid fa-chevron-right badge-arrow"></i>
+        </div>
+
+        <!-- Headline & Subheadline -->
+        <h1 class="hero-title animate-fade-up">
+          Design, build & launch ideas <br class="title-break" />
+          <span class="gradient-text">at the speed of thought</span>
+        </h1>
+        <p class="hero-description animate-fade-up delay-1">
+          NovaFlow unites your entire creative workflow in one collaborative canvas. 
+          Harness generative AI, real-time multi-player sync, and one-click interactive prototypes.
+        </p>
+
+        <!-- CTA Action Group -->
+        <div class="hero-cta-group animate-fade-up delay-2">
+          <a href="#pricing" class="btn btn-primary btn-lg glow-button">
+            <span>Start 14-Day Free Trial</span>
+            <i class="fa-solid fa-sparkles"></i>
+          </a>
+          <button class="btn btn-secondary btn-lg" id="demoButton">
+            <i class="fa-solid fa-circle-play"></i>
+            <span>Watch Live Demo</span>
+          </button>
+        </div>
+
+        <!-- Micro Social Proof -->
+        <div class="hero-proof animate-fade-up delay-3">
+          <div class="avatar-stack">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="User 1" />
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="User 2" />
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80" alt="User 3" />
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80" alt="User 4" />
+          </div>
+          <div class="proof-text">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span><strong>4.9/5</strong> rating from over 45,000+ happy creators</span>
+          </div>
+        </div>
+
+        <!-- Interactive Dashboard Mockup Showcase -->
+        <div class="hero-mockup-wrapper animate-fade-up delay-4">
+          <div class="hero-mockup-frame">
+            <div class="mockup-header-bar">
+              <div class="window-controls">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="window-title">
+                <i class="fa-solid fa-lock"></i>
+                <span>novaflow.app/workspace/project-alpha</span>
+              </div>
+              <div class="window-actions">
+                <span class="user-pill"><i class="fa-solid fa-user-group"></i> 5 Active</span>
+              </div>
+            </div>
+
+            <!-- Workspace Screen Mockup -->
+            <div class="mockup-content">
+              <!-- Left Mini Sidebar -->
+              <div class="mockup-sidebar">
+                <div class="sidebar-icon active"><i class="fa-solid fa-cube"></i></div>
+                <div class="sidebar-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <div class="sidebar-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div class="sidebar-icon"><i class="fa-solid fa-sliders"></i></div>
+                <div class="sidebar-icon"><i class="fa-solid fa-gear"></i></div>
+              </div>
+
+              <!-- Main Canvas Area -->
+              <div class="mockup-canvas">
+                <div class="canvas-topbar">
+                  <div class="canvas-title">
+                    <span class="project-tag">Design System v4.2</span>
+                    <span class="save-status"><i class="fa-solid fa-cloud-arrow-up"></i> Auto-synced</span>
+                  </div>
+                  <div class="canvas-tools">
+                    <span class="tool-btn active"><i class="fa-solid fa-arrow-pointer"></i> Select</span>
+                    <span class="tool-btn"><i class="fa-solid fa-vector-square"></i> Frame</span>
+                    <span class="tool-btn"><i class="fa-solid fa-pen-nib"></i> Pen</span>
+                    <span class="tool-btn highlight"><i class="fa-solid fa-robot"></i> AI Generate</span>
+                  </div>
+                </div>
+
+                <div class="canvas-board">
+                  <div class="design-card card-primary">
+                    <div class="card-chip">Hero Component</div>
+                    <div class="skeleton-title"></div>
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-btn"></div>
+                  </div>
+                  <div class="design-card card-chart">
+                    <div class="card-chip">Analytics Widget</div>
+                    <div class="chart-bars">
+                      <span class="bar-col h-40"></span>
+                      <span class="bar-col h-70"></span>
+                      <span class="bar-col h-55"></span>
+                      <span class="bar-col h-90"></span>
+                      <span class="bar-col h-65"></span>
+                      <span class="bar-col h-100 active-bar"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Glassmorphism Badges -->
+              <div class="floating-badge badge-top-right">
+                <div class="badge-icon icon-ai"><i class="fa-solid fa-brain"></i></div>
+                <div class="badge-info">
+                  <span class="badge-title">AI Assistant</span>
+                  <span class="badge-sub">Generating 3 variations...</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left">
+                <div class="badge-icon icon-speed"><i class="fa-solid fa-bolt"></i></div>
+                <div class="badge-info">
+                  <span class="badge-title">Rendering Speed</span>
+                  <span class="badge-sub">0.02s • Zero Latency</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand Ticker / Logos -->
+        <div class="client-ticker">
+          <p class="ticker-label">BACKED & TRUSTED BY INNOVATIVE TEAMS WORLDWIDE</p>
+          <div class="ticker-logos">
+            <span class="client-logo"><i class="fa-brands fa-figma"></i> Figma</span>
+            <span class="client-logo"><i class="fa-brands fa-github"></i> GitHub</span>
+            <span class="client-logo"><i class="fa-brands fa-stripe"></i> Stripe</span>
+            <span class="client-logo"><i class="fa-brands fa-spotify"></i> Spotify</span>
+            <span class="client-logo"><i class="fa-brands fa-slack"></i> Slack</span>
+            <span class="client-logo"><i class="fa-brands fa-discord"></i> Discord</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE FEATURES SECTION (Bento Grid Columns) -->
+    <section class="section features-section" id="features">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <i class="fa-solid fa-layer-group"></i>
+            <span>Powerhouse Capabilities</span>
+          </div>
+          <h2 class="section-title">Everything you need to <span class="gradient-text">build extraordinary digital products</span></h2>
+          <p class="section-subtitle">
+            Say goodbye to fragmented tools. NovaFlow combines state-of-the-art vector engines, 
+            intelligent design automation, and instant code export.
+          </p>
+        </div>
+
+        <!-- Bento Grid Layout -->
+        <div class="bento-grid">
+          <!-- Card 1: Large Featured -->
+          <div class="bento-card bento-card-span-2">
+            <div class="card-header-icon gradient-blue">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <div class="card-content">
+              <span class="card-category">Generative Engine</span>
+              <h3 class="card-title">Prompt-to-UI in Seconds</h3>
+              <p class="card-description">
+                Describe screens, components, or entire design systems in plain natural language. 
+                Our neural design engine generates clean, editable vector layouts with organized layers.
+              </p>
+              <div class="feature-tags">
+                <span class="tag">Auto-Layout</span>
+                <span class="tag">Component Tokens</span>
+                <span class="tag">Smart Variations</span>
+              </div>
+            </div>
+            <div class="card-visual visual-prompt">
+              <div class="prompt-preview">
+                <div class="prompt-input">
+                  <i class="fa-solid fa-terminal"></i>
+                  <span>"Build a responsive SaaS pricing table with neon accents"</span>
+                </div>
+                <div class="prompt-result-pill">
+                  <i class="fa-solid fa-check"></i> Generated 4 layouts
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Collaboration -->
+          <div class="bento-card">
+            <div class="card-header-icon gradient-purple">
+              <i class="fa-solid fa-users-viewfinder"></i>
+            </div>
+            <div class="card-content">
+              <span class="card-category">Multiplayer Canvas</span>
+              <h3 class="card-title">Real-Time Co-Creation</h3>
+              <p class="card-description">
+                Work alongside your team with zero lag. Live multiplayer cursors, inline voice comments, 
+                and branchless version history.
+              </p>
+            </div>
+            <div class="cursor-visual">
+              <div class="mini-cursor cursor-1">
+                <i class="fa-solid fa-arrow-pointer"></i>
+                <span class="cursor-label">Alex (Design)</span>
+              </div>
+              <div class="mini-cursor cursor-2">
+                <i class="fa-solid fa-arrow-pointer"></i>
+                <span class="cursor-label">Elena (Dev)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Code Export -->
+          <div class="bento-card">
+            <div class="card-header-icon gradient-green">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="card-content">
+              <span class="card-category">Developer Handoff</span>
+              <h3 class="card-title">Production Code Ready</h3>
+              <p class="card-description">
+                Export clean, semantic HTML5, modern CSS, Tailwind, or React code. 
+                Pixel-perfect CSS Flexbox and Grid without bloated markup.
+              </p>
+            </div>
+            <div class="code-pill-preview">
+              <code>&lt;div class="hero-wrapper"&gt;</code>
+            </div>
+          </div>
+
+          <!-- Card 4: Design Tokens -->
+          <div class="bento-card bento-card-span-2">
+            <div class="card-header-icon gradient-orange">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <div class="card-content">
+              <span class="card-category">Global Design Systems</span>
+              <h3 class="card-title">Dynamic Color Palettes & Adaptive Themes</h3>
+              <p class="card-description">
+                Harmonize colors, typography scales, spacing units, and dark mode tokens in one centralized library. 
+                Any update cascades instantly across all linked mockups and documentation.
+              </p>
+              <div class="palette-swatches">
+                <span class="swatch swatch-1" title="Primary Indigo"></span>
+                <span class="swatch swatch-2" title="Neon Cyan"></span>
+                <span class="swatch swatch-3" title="Electric Violet"></span>
+                <span class="swatch swatch-4" title="Sunset Amber"></span>
+                <span class="swatch swatch-5" title="Emerald Accent"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE SHOWCASE TABS SECTION -->
+    <section class="section showcase-section" id="showcase">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <i class="fa-solid fa-compass"></i>
+            <span>Tailored Workflows</span>
+          </div>
+          <h2 class="section-title">Built for every stage of your <span class="gradient-text">product cycle</span></h2>
+          <p class="section-subtitle">
+            Whether you are sketching a brand-new concept, stress-testing responsive layouts, 
+            or shipping to production, NovaFlow adapts to your rhythm.
+          </p>
+        </div>
+
+        <!-- Tab Controls -->
+        <div class="tab-controls" role="tablist">
+          <button class="tab-btn active" data-tab="designers" role="tab" aria-selected="true">
+            <i class="fa-solid fa-pen-ruler"></i> For Product Designers
+          </button>
+          <button class="tab-btn" data-tab="engineers" role="tab" aria-selected="false">
+            <i class="fa-solid fa-code-merge"></i> For Frontend Engineers
+          </button>
+          <button class="tab-btn" data-tab="managers" role="tab" aria-selected="false">
+            <i class="fa-solid fa-chart-pie"></i> For Team Leads & PMs
+          </button>
+        </div>
+
+        <!-- Tab Content Panes -->
+        <div class="tab-content-wrapper">
+          <!-- Pane 1: Designers -->
+          <div class="tab-pane active" id="pane-designers">
+            <div class="pane-grid">
+              <div class="pane-text">
+                <h3>Fluid vector manipulation with zero performance bottlenecks</h3>
+                <p>
+                  Experience an infinitely scalable canvas powered by WebGL. Zoom through thousands of artboards 
+                  with silky smooth 120 FPS precision. 
+                </p>
+                <ul class="feature-checklist">
+                  <li><i class="fa-solid fa-circle-check"></i> Advanced non-destructive boolean vector operations</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Intelligent smart-snapping with sub-pixel alignment</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Comprehensive component libraries & icon sets</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Built-in contrast checking & accessibility audit</li>
+                </ul>
+                <a href="#pricing" class="btn btn-primary">Try Designer Mode</a>
+              </div>
+              <div class="pane-graphic">
+                <div class="graphic-card">
+                  <div class="graphic-chip"><i class="fa-solid fa-bezier-curve"></i> Vector Engine</div>
+                  <h4>Adaptive Geometry System</h4>
+                  <div class="bezier-demo">
+                    <div class="node node-1"></div>
+                    <div class="node-line"></div>
+                    <div class="node node-2"></div>
+                  </div>
+                  <div class="graphic-stat">
+                    <span>Render Latency</span>
+                    <strong>1.4 ms</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 2: Engineers -->
+          <div class="tab-pane" id="pane-engineers">
+            <div class="pane-grid">
+              <div class="pane-text">
+                <h3>Bridge the canyon between mockups and real production code</h3>
+                <p>
+                  Stop guessing CSS values or manual slicing. Inspect spacing, copy production-ready CSS 
+                  variables, and generate React or Vue component structures instantly.
+                </p>
+                <ul class="feature-checklist">
+                  <li><i class="fa-solid fa-circle-check"></i> 1-click CSS Grid, Flexbox & Tailwind token export</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Webhook integrations for Git and continuous deployment</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Automated SVG optimization and WebP image generation</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Interactive dev inspection with live DOM hierarchy</li>
+                </ul>
+                <a href="#pricing" class="btn btn-primary">Explore Dev Tools</a>
+              </div>
+              <div class="pane-graphic">
+                <div class="graphic-card code-card">
+                  <div class="code-header">
+                    <span class="file-name"><i class="fa-brands fa-css3-alt"></i> styles.css</span>
+                    <span class="copy-badge"><i class="fa-regular fa-copy"></i> Copied</span>
+                  </div>
+                  <pre class="code-snippet"><code>:root {
+  --primary-accent: #6366f1;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --border-glow: #38bdf8;
+  --radius-xl: 1.5rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: var(--space-8);
+}</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 3: PMs -->
+          <div class="tab-pane" id="pane-managers">
+            <div class="pane-grid">
+              <div class="pane-text">
+                <h3>Align stakeholders and ship milestones on schedule</h3>
+                <p>
+                  Centralize review feedback directly on visual canvases. Keep roadmaps, asset statuses, 
+                  and stakeholder approvals transparent in one single source of truth.
+                </p>
+                <ul class="feature-checklist">
+                  <li><i class="fa-solid fa-circle-check"></i> Visual threaded comments with @mentions</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Milestone version locks & granular permissions</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Analytics on design token usage and adoption</li>
+                  <li><i class="fa-solid fa-circle-check"></i> SSO, SOC2 compliance, and audit logs</li>
+                </ul>
+                <a href="#pricing" class="btn btn-primary">Start Team Trial</a>
+              </div>
+              <div class="pane-graphic">
+                <div class="graphic-card">
+                  <div class="graphic-chip"><i class="fa-solid fa-list-check"></i> Team Alignment</div>
+                  <h4>Milestone Health</h4>
+                  <div class="progress-container">
+                    <div class="progress-bar-row">
+                      <span>Sprint 24 Release</span>
+                      <strong>88%</strong>
+                    </div>
+                    <div class="progress-track"><div class="progress-fill w-88"></div></div>
+                  </div>
+                  <div class="approval-pills">
+                    <span class="pill pill-success"><i class="fa-solid fa-check"></i> Design Approved</span>
+                    <span class="pill pill-pending"><i class="fa-solid fa-clock"></i> QA Review</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS & IMPACT COUNTERS -->
+    <section class="section metrics-section" id="metrics">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-icon"><i class="fa-solid fa-rocket"></i></div>
+            <div class="metric-number" data-target="10">0<span>x</span></div>
+            <div class="metric-label">Faster Design-to-Code Velocity</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon"><i class="fa-solid fa-users"></i></div>
+            <div class="metric-number" data-target="150">0<span>k+</span></div>
+            <div class="metric-label">Active Global Creators</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="metric-number" data-target="99">0<span>.99%</span></div>
+            <div class="metric-label">Reliable Cloud Infrastructure</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon"><i class="fa-solid fa-heart"></i></div>
+            <div class="metric-number" data-target="49">0<span>/50</span></div>
+            <div class="metric-label">Customer Satisfaction Score</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section class="section pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <i class="fa-solid fa-gem"></i>
+            <span>Transparent Pricing</span>
+          </div>
+          <h2 class="section-title">Simple plans tailored for <span class="gradient-text">every ambition</span></h2>
+          <p class="section-subtitle">
+            Start for free, test with zero risk, and upgrade as your team grows. No credit card required.
+          </p>
+
+          <!-- Billing Period Switcher -->
+          <div class="billing-switcher">
+            <span class="billing-label monthly active">Monthly</span>
+            <button class="toggle-switch" id="billingToggle" aria-label="Toggle Monthly and Annual billing">
+              <span class="toggle-slider"></span>
+            </button>
+            <span class="billing-label annual">
+              Annual <span class="discount-pill">Save 20%</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Pricing Cards Grid -->
+        <div class="pricing-grid">
+          <!-- Tier 1: Starter -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="tier-name">Starter</h3>
+              <p class="tier-desc">Ideal for solo creators, students, and hobbyist projects.</p>
+              <div class="price-container">
+                <span class="currency">$</span>
+                <span class="price-val" data-monthly="0" data-annual="0">0</span>
+                <span class="period">/ month</span>
+              </div>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Up to 3 active projects</li>
+                <li><i class="fa-solid fa-check"></i> Standard vector editor tools</li>
+                <li><i class="fa-solid fa-check"></i> 50 AI generations per month</li>
+                <li><i class="fa-solid fa-check"></i> Community support & templates</li>
+                <li class="disabled"><i class="fa-solid fa-xmark"></i> Unlimited team seats</li>
+                <li class="disabled"><i class="fa-solid fa-xmark"></i> Custom domain hosting</li>
+              </ul>
+            </div>
+            <a href="#pricing" class="btn btn-outline btn-block">Get Started Free</a>
+          </div>
+
+          <!-- Tier 2: Pro (Featured) -->
+          <div class="pricing-card featured">
+            <div class="popular-ribbon">Most Popular</div>
+            <div class="pricing-header">
+              <h3 class="tier-name">Professional</h3>
+              <p class="tier-desc">For fast-moving freelancers, designers, and startups.</p>
+              <div class="price-container">
+                <span class="currency">$</span>
+                <span class="price-val" data-monthly="24" data-annual="19">24</span>
+                <span class="period">/ month</span>
+              </div>
+              <span class="billing-note" id="annualNote">Billed monthly</span>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li><i class="fa-solid fa-check"></i> <strong>Unlimited</strong> active projects</li>
+                <li><i class="fa-solid fa-check"></i> 2,500 AI generations per month</li>
+                <li><i class="fa-solid fa-check"></i> Real-time multiplayer canvas (5 seats)</li>
+                <li><i class="fa-solid fa-check"></i> Production code export (HTML/CSS/React)</li>
+                <li><i class="fa-solid fa-check"></i> Version history (90 days)</li>
+                <li><i class="fa-solid fa-check"></i> Priority 24/7 support</li>
+              </ul>
+            </div>
+            <a href="#pricing" class="btn btn-primary btn-block glow-button">
+              <span>Start 14-Day Free Trial</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Tier 3: Enterprise -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="tier-name">Enterprise</h3>
+              <p class="tier-desc">Custom power, dedicated support, and enterprise security.</p>
+              <div class="price-container">
+                <span class="currency">$</span>
+                <span class="price-val" data-monthly="79" data-annual="64">79</span>
+                <span class="period">/ month</span>
+              </div>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Everything in Professional</li>
+                <li><i class="fa-solid fa-check"></i> Unlimited team seats</li>
+                <li><i class="fa-solid fa-check"></i> Unlimited generative AI requests</li>
+                <li><i class="fa-solid fa-check"></i> Single Sign-On (SAML / Okta)</li>
+                <li><i class="fa-solid fa-check"></i> Dedicated account success manager</li>
+                <li><i class="fa-solid fa-check"></i> Custom SLAs & contract terms</li>
+              </ul>
+            </div>
+            <a href="#pricing" class="btn btn-outline btn-block">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <i class="fa-solid fa-comments"></i>
+            <span>Loved by Builders</span>
+          </div>
+          <h2 class="section-title">What the design community is <span class="gradient-text">saying about us</span></h2>
+          <p class="section-subtitle">
+            See how teams around the world transformed their creative cycle with NovaFlow.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Review 1 -->
+          <div class="testimonial-card">
+            <div class="card-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "NovaFlow has replaced three separate applications in our pipeline. The generative AI prompt tool
+              saves our design team at least 15 hours every single week. It feels like magic."
+            </p>
+            <div class="reviewer-meta">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Sophia Chen" class="reviewer-avatar" />
+              <div>
+                <h4 class="reviewer-name">Sophia Chen</h4>
+                <p class="reviewer-role">Head of Product Design @ StripeX</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="testimonial-card featured-testimonial">
+            <div class="card-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "The clean code export is genuinely unmatched. Usually 'export to code' tools output unreadable spaghetti,
+              but NovaFlow writes semantic, structured HTML and CSS Grid layouts that my engineers adore."
+            </p>
+            <div class="reviewer-meta">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="Marcus Sterling" class="reviewer-avatar" />
+              <div>
+                <h4 class="reviewer-name">Marcus Sterling</h4>
+                <p class="reviewer-role">Senior Frontend Architect @ Veloce</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="testimonial-card">
+            <div class="card-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              "As a solo founder, speed is my greatest advantage. NovaFlow gave me the capability to design
+              and launch our complete product landing page and customer portal in a single weekend."
+            </p>
+            <div class="reviewer-meta">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&auto=format&fit=crop&q=80" alt="Amara Okafor" class="reviewer-avatar" />
+              <div>
+                <h4 class="reviewer-name">Amara Okafor</h4>
+                <p class="reviewer-role">Founder & CEO @ Horizon Studio</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS (Accordion) -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <i class="fa-solid fa-circle-question"></i>
+            <span>Got Questions?</span>
+          </div>
+          <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+          <p class="section-subtitle">
+            Find answers to commonly asked questions about NovaFlow, licensing, and workflow integration.
+          </p>
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+          <!-- Item 1 -->
+          <div class="accordion-item active">
+            <button class="accordion-trigger" aria-expanded="true">
+              <span>How does NovaFlow compare to traditional design tools?</span>
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Unlike legacy desktop software that operates in silos, NovaFlow is built from the ground up 
+                for modern web standards. It generates semantic HTML/CSS structures natively, includes real-time 
+                AI co-pilot capabilities, and allows instantaneous team collaboration without heavy file syncs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Can I export and use the generated code commercially?</span>
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Yes! All code and visual assets produced within NovaFlow are 100% yours. You hold full commercial 
+                copyright with zero royalties or attribution required.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Is there a free trial, and do I need to enter credit card details?</span>
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>
+                You can start using NovaFlow completely free with our Starter tier, or initiate a 14-day 
+                all-features trial of Professional without entering any payment information whatsoever.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>How does real-time collaboration handle conflicts?</span>
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>
+                We use conflict-free replicated data types (CRDTs) to ensure that concurrent edits by multiple 
+                teammates merge seamlessly with sub-millisecond precision, preventing any accidental overwrites.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Can I import my existing Figma or Sketch designs?</span>
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Yes! Our universal importer supports Figma tokens, SVG components, and Sketch JSON files, 
+                converting them cleanly into native NovaFlow responsive canvas boards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="cta-content">
+            <span class="cta-tag">✨ Unlock Your Creative Potential</span>
+            <h2 class="cta-title">Ready to build your next breakthrough product?</h2>
+            <p class="cta-text">
+              Join over 150,000 creators, developers, and teams building the future with NovaFlow today.
+            </p>
+            <form class="cta-form" id="newsletterForm" onsubmit="return false;">
+              <div class="input-wrapper">
+                <i class="fa-regular fa-envelope input-icon"></i>
+                <input type="email" id="emailInput" placeholder="Enter your work email..." required />
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg glow-button">
+                <span>Get Started Free</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+            <div class="form-feedback" id="formFeedback"></div>
+            <div class="cta-guarantee">
+              <span><i class="fa-solid fa-shield-check"></i> No credit card required</span>
+              <span><i class="fa-solid fa-bolt"></i> Instant 60-second setup</span>
+              <span><i class="fa-solid fa-xmark"></i> Cancel anytime</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <!-- Footer Columns -->
+      <div class="footer-columns">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col brand-col">
+          <a href="#" class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-shapes"></i></span>
+            <span class="logo-text">Nova<span>Flow</span></span>
+          </a>
+          <p class="brand-desc">
+            The next-generation collaborative workspace engineered to streamline digital design, 
+            prototyping, and frontend code delivery.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Product -->
+        <div class="footer-col">
+          <h4 class="col-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Design Canvas</a></li>
+            <li><a href="#features">AI Copilot</a></li>
+            <li><a href="#showcase">Code Export</a></li>
+            <li><a href="#pricing">Design Systems</a></li>
+            <li><a href="#showcase">Integrations</a></li>
+            <li><a href="#pricing">Changelog <span class="footer-tag">v3.0</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Resources -->
+        <div class="footer-col">
+          <h4 class="col-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Component UI Kits</a></li>
+            <li><a href="#">Video Tutorials</a></li>
+            <li><a href="#">Community Forum</a></li>
+            <li><a href="#">API Reference</a></li>
+            <li><a href="#">Keyboard Shortcuts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Company -->
+        <div class="footer-col">
+          <h4 class="col-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About NovaFlow</a></li>
+            <li><a href="#">Careers <span class="footer-tag hire">We're hiring</span></a></li>
+            <li><a href="#">Customer Stories</a></li>
+            <li><a href="#">Press Kit</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Security & Trust</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; <span id="currentYear">2026</span> NovaFlow Technologies Inc. All rights reserved. 
+          Built with semantic HTML5 & modern CSS.
+        </div>
+        <div class="footer-status">
+          <span class="status-indicator"></span>
+          <span>All systems operational</span>
+        </div>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP BUTTON -->
+  <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top of page">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- DEMO VIDEO MODAL -->
+  <div class="modal" id="demoModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title"><i class="fa-solid fa-circle-play"></i> NovaFlow Product Walkthrough</h3>
+        <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="video-placeholder">
+          <div class="play-pulse">
+            <i class="fa-solid fa-play"></i>
+          </div>
+          <p>Interactive 2-Minute Guided Tour</p>
+          <span class="preview-note">Previewing: Real-time UI generation, canvas multiplayer, and instant CSS export.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
