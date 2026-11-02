@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio of Kamuri Pravalika - Motivated Computer Science student and Web Developer skilled in HTML, CSS, JavaScript, SQL, and Python basics.">
+  <meta name="keywords" content="Kamuri Pravalika, Web Developer, Computer Science, KLM College of Engineering For Women, Kadapa, HTML, CSS, JavaScript, SQL, Python, Portfolio">
+  <meta name="author" content="Kamuri Pravalika">
+  
+  <title>Kamuri Pravalika | Web Developer &amp; Computer Science Student</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+  <!-- ==============================================
+       HEADER SECTION: Navigation Bar & Branding
+       ============================================== -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <!-- Logo / Name -->
+      <a href="#hero" class="brand-logo" aria-label="Kamuri Pravalika Portfolio Home">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">Pravalika<span class="logo-highlight">Dev</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <!-- Dark/Light Mode Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Toggle Theme">
+          <i class="fas fa-sun theme-icon-sun"></i>
+          <i class="fas fa-moon theme-icon-moon"></i>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="nav-toggle" class="nav-toggle-btn" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Backdrop for mobile menu overlay -->
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+
+    <!-- ==============================================
+         HERO SECTION: Greeting, Tagline & Call-To-Action
+         ============================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Seeking Software &amp; Web Developer Roles</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Kamuri Pravalika</span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            Passionate <span class="typed-text">Web Developer</span> &amp; Computer Science Student
+          </p>
+          
+          <p class="hero-description">
+            Motivated and creative Computer Science student with a strong interest in web development, programming, and data analysis. Skilled in HTML, CSS, JavaScript, SQL, and Python basics, with a passion for building user-friendly digital solutions.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-paper-plane"></i>
+              <span>Contact Me</span>
+            </a>
+            <a href="assets/resume.pdf" download="Kamuri_Pravalika_Resume.pdf" class="btn btn-ghost" title="Download Resume">
+              <i class="fas fa-download"></i>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <!-- Hero Social Links & Contact -->
+          <div class="hero-socials">
+            <span class="socials-label">Connect:</span>
+            <div class="social-icons">
+              <a href="mailto:kamuripravali@gmail.com" aria-label="Email Kamuri Pravalika" class="social-link" title="Email Me">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="tel:9390958926" aria-label="Call Kamuri Pravalika" class="social-link" title="Call Me">
+                <i class="fas fa-phone-alt"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Code Card Representation -->
+        <div class="hero-visual">
+          <div class="code-window">
+            <div class="code-window-header">
+              <div class="window-controls">
+                <span class="control-dot red"></span>
+                <span class="control-dot yellow"></span>
+                <span class="control-dot green"></span>
+              </div>
+              <span class="code-filename">pravalika_profile.js</span>
+            </div>
+            <div class="code-window-body">
+              <pre><code><span class="code-keyword">const</span> <span class="code-def">student</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Kamuri Pravalika"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Web Developer"</span>,
+  <span class="code-prop">education</span>: <span class="code-string">"BTech - Computer Science"</span>,
+  <span class="code-prop">college</span>: <span class="code-string">"KLM College for Women"</span>,
+  <span class="code-prop">skills</span>: [
+    <span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JavaScript"</span>,
+    <span class="code-string">"SQL"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"Data Analysis"</span>
+  ],
+  <span class="code-prop">seekingOpportunities</span>: <span class="code-boolean">true</span>
+};</code></pre>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-1">
+            <i class="fab fa-html5"></i>
+            <span>Web Dev</span>
+          </div>
+          <div class="floating-badge badge-2">
+            <i class="fas fa-database"></i>
+            <span>SQL Database</span>
+          </div>
+          <div class="floating-badge badge-3">
+            <i class="fab fa-python"></i>
+            <span>Python Basics</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <div class="scroll-indicator">
+        <a href="#about" aria-label="Scroll down to About section">
+          <span class="mouse-icon">
+            <span class="wheel"></span>
+          </span>
+          <span class="scroll-arrow"><i class="fas fa-chevron-down"></i></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         ABOUT SECTION: Profile, Bio & Highlights
+         ============================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <p class="section-tag"><i class="fas fa-user"></i> About Me</p>
+          <h2 class="section-title">Who I Am &amp; What I Do</h2>
+          <div class="section-divider"></div>
+          <p class="section-lead">A Computer Science undergraduate eager to build impactful digital solutions.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Profile Image Column -->
+          <div class="about-image-wrapper">
+            <div class="image-card">
+              <div class="image-frame">
+                <img src="assets/images/profile.svg" alt="Kamuri Pravalika - Profile Avatar" class="profile-img">
+              </div>
+              <div class="image-badge">
+                <i class="fas fa-graduation-cap"></i>
+                <span>BTech CSE Student (2023 - Present)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bio & Details Column -->
+          <div class="about-content">
+            <h3 class="about-headline">
+              Computer Science Student &amp; Aspiring <span class="highlight-text">Software Professional</span>
+            </h3>
+
+            <p class="about-text">
+              Motivated and creative Computer Science student with a strong interest in web development, programming, and data analysis. Skilled in HTML, CSS, JavaScript, SQL, and Python basics, with a passion for building user-friendly digital solutions. Seeking opportunities to apply technical knowledge and grow as a software professional.
+            </p>
+
+            <p class="about-text">
+              Currently pursuing my BTech degree at <strong>KLM College of Engineering For Women</strong>, Kadapa. I enjoy solving real-world problems through data analysis, hands-on community projects, and clean front-end web development.
+            </p>
+
+            <!-- Quick Details Grid -->
+            <div class="info-list-grid">
+              <div class="info-item">
+                <span class="info-label"><i class="fas fa-user-check"></i> Full Name:</span>
+                <span class="info-value">Kamuri Pravalika</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fas fa-envelope"></i> Email:</span>
+                <span class="info-value"><a href="mailto:kamuripravali@gmail.com">kamuripravali@gmail.com</a></span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fas fa-phone-alt"></i> Phone:</span>
+                <span class="info-value"><a href="tel:9390958926">+91 9390958926</a></span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fas fa-map-marker-alt"></i> Location:</span>
+                <span class="info-value">Kadapa, Andhra Pradesh, India</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fas fa-university"></i> College:</span>
+                <span class="info-value">KLM College of Engg. For Women</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fas fa-birthday-cake"></i> Date of Birth:</span>
+                <span class="info-value">27, December 2004</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fas fa-language"></i> Languages:</span>
+                <span class="info-value">Telugu (Native), English</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fas fa-heart"></i> Interests:</span>
+                <span class="info-value">Learning New Skills, Photography, Graphic Design</span>
+              </div>
+            </div>
+
+            <!-- Stats Highlight Cards -->
+            <div class="stats-grid">
+              <div class="stat-card">
+                <span class="stat-number">BTech</span>
+                <span class="stat-desc">Computer Science (Ongoing)</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">4+</span>
+                <span class="stat-desc">Certifications &amp; Workshops</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">100%</span>
+                <span class="stat-desc">Commitment to Growth</span>
+              </div>
+            </div>
+
+            <!-- About CTAs -->
+            <div class="about-actions">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fas fa-comment-dots"></i> Get in Touch
+              </a>
+              <a href="assets/resume.pdf" download="Kamuri_Pravalika_Resume.pdf" class="btn btn-outline">
+                <i class="fas fa-file-pdf"></i> Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         SKILLS SECTION: Technical Competencies from Resume
+         ============================================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <p class="section-tag"><i class="fas fa-code"></i> Skills &amp; Competencies</p>
+          <h2 class="section-title">My Technical Toolkit</h2>
+          <div class="section-divider"></div>
+          <p class="section-lead">The technologies, programming languages, and tools highlighted in my resume.</p>
+        </div>
+
+        <div class="skills-categories-grid">
+          
+          <!-- Category 1: Web Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-frontend">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Web Development</h3>
+                <p class="category-desc">Core front-end web technologies</p>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fab fa-html5 color-html"></i> HTML5 (Semantic Structure)</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress" style="--target-width: 90%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fab fa-css3-alt color-css"></i> CSS3 (Flexbox &amp; Responsive Layouts)</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress" style="--target-width: 85%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fab fa-js color-js"></i> JavaScript (DOM &amp; Interactivity)</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress" style="--target-width: 75%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Programming & Database -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-backend">
+                <i class="fas fa-terminal"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Programming &amp; Database</h3>
+                <p class="category-desc">Problem solving &amp; relational data queries</p>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fas fa-database color-sql"></i> SQL (Relational Queries &amp; Management)</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress" style="--target-width: 80%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fab fa-python color-api"></i> Python Basics</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress" style="--target-width: 75%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fab fa-java color-html"></i> Java Basics</span>
+                  <span class="skill-pct">70%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress" style="--target-width: 70%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Analytics & Cloud Essentials -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-tools">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Data Analysis &amp; Tools</h3>
+                <p class="category-desc">Analytical reporting and software tools</p>
+              </div>
+            </div>
+
+            <div class="skills-badges-grid">
+              <div class="skill-badge">
+                <i class="fas fa-chart-pie color-perf"></i>
+                <span>Data Analysis</span>
+              </div>
+              <div class="skill-badge">
+                <i class="fas fa-file-excel color-db"></i>
+                <span>Microsoft Excel</span>
+              </div>
+              <div class="skill-badge">
+                <i class="fas fa-cloud color-deploy"></i>
+                <span>IBM Cloud Essentials</span>
+              </div>
+              <div class="skill-badge">
+                <i class="fas fa-atom color-a11y"></i>
+                <span>Quantum Fundamentals</span>
+              </div>
+              <div class="skill-badge">
+                <i class="fas fa-poll color-problem"></i>
+                <span>Survey &amp; Reporting</span>
+              </div>
+              <div class="skill-badge">
+                <i class="fas fa-mobile-alt color-mobile"></i>
+                <span>Android Usage Research</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Creative & Personal Interests -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-soft">
+                <i class="fas fa-palette"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Interests &amp; Strengths</h3>
+                <p class="category-desc">Creative pursuits and personal passions</p>
+              </div>
+            </div>
+
+            <div class="skills-badges-grid">
+              <div class="skill-badge">
+                <i class="fas fa-paint-brush color-problem"></i>
+                <span>Graphic Design</span>
+              </div>
+              <div class="skill-badge">
+                <i class="fas fa-camera color-auth"></i>
+                <span>Photography</span>
+              </div>
+              <div class="skill-badge">
+                <i class="fas fa-lightbulb color-learn"></i>
+                <span>Learning New Skills</span>
+              </div>
+              <div class="skill-badge">
+                <i class="fas fa-comments color-clean"></i>
+                <span>Telugu (Native)</span>
+              </div>
+              <div class="skill-badge">
+                <i class="fas fa-globe color-terminal"></i>
+                <span>English (Proficient)</span>
+              </div>
+              <div class="skill-badge">
+                <i class="fas fa-users color-team"></i>
+                <span>Community Collaboration</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         PROJECTS SECTION: Featuring Community & Tech Projects
+         ============================================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <p class="section-tag"><i class="fas fa-folder-open"></i> Project Portfolio</p>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-divider"></div>
+          <p class="section-lead">Showcasing community research, web applications, and database solutions.</p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters" role="tablist" aria-label="Project category filter">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="community">Community Research</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="data">Data &amp; SQL</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-container">
+          
+          <!-- Project 1: JNTU Community Service Project (Primary from Resume) -->
+          <article class="project-card" data-category="community">
+            <div class="project-image-box">
+              <img src="assets/images/project-jntu.svg" alt="Preview of JNTU Community Service Project on Android Phone Usage" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="#projects" class="overlay-btn" title="View Project Overview">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#contact" class="overlay-btn" title="Contact about this Project">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+              <span class="project-badge">Featured Academic Project</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">JNTU Community Service: Android Phone Usage Analysis</h3>
+              <p class="project-description">
+                Performed survey-based analysis of smartphone usage patterns across varied demographic groups and documented empirical findings. Applied structured data collection, statistical analysis, and comprehensive report preparation skills.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Data Collection</span>
+                <span class="tag">Data Analysis</span>
+                <span class="tag">Reporting</span>
+                <span class="tag">Excel</span>
+              </div>
+              <div class="project-actions">
+                <a href="assets/resume.pdf" download="Kamuri_Pravalika_Resume.pdf" class="btn btn-sm btn-outline">
+                  <i class="fas fa-file-pdf"></i> Read Summary
+                </a>
+                <a href="#projects" class="btn btn-sm btn-primary">
+                  <i class="fas fa-info-circle"></i> Project Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Personal Portfolio Website -->
+          <article class="project-card" data-category="web">
+            <div class="project-image-box">
+              <img src="assets/images/project-agency.svg" alt="Preview of Kamuri Pravalika Personal Portfolio" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="#hero" class="overlay-btn" title="View Live Page">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <span class="project-badge">Web Development</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Personal Developer Portfolio Website</h3>
+              <p class="project-description">
+                A fully responsive, accessible personal portfolio website built with semantic HTML5, modern CSS3 variables, and JavaScript. Includes theme switching, mobile drawer, resume PDF downloads, and interactive contact forms.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3 Flexbox &amp; Grid</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Responsive</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a href="#hero" class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Student Database & SQL System -->
+          <article class="project-card" data-category="data">
+            <div class="project-image-box">
+              <img src="assets/images/project-sql.svg" alt="Preview of Student Database and SQL Management System" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="#projects" class="overlay-btn" title="View Query Model">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <span class="project-badge">Database &amp; SQL</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Student Records Database Management System</h3>
+              <p class="project-description">
+                Designed a relational schema and executed complex SQL queries to store, retrieve, filter, and analyze student enrollment data, course completion, and semester metrics at KLM College of Engineering.
+              </p>
+              <div class="project-tags">
+                <span class="tag">SQL</span>
+                <span class="tag">Relational Database</span>
+                <span class="tag">Data Filtering</span>
+                <span class="tag">Schema Design</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fab fa-github"></i> SQL Scripts
+                </a>
+                <a href="#projects" class="btn btn-sm btn-primary">
+                  <i class="fas fa-table"></i> View Tables
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Interactive Web Store -->
+          <article class="project-card" data-category="web">
+            <div class="project-image-box">
+              <img src="assets/images/project-ecommerce.svg" alt="Preview of Responsive Web E-Commerce Interface" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="#projects" class="overlay-btn" title="Live Preview">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <span class="project-badge">Web Development</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Responsive E-Commerce Product Showcase</h3>
+              <p class="project-description">
+                Interactive web catalog built using clean HTML5 markup and modern CSS3 styling. Features product cards, dynamic filtering, quantity counters, and responsive UI for mobile and desktop screens.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">UI/UX</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a href="#projects" class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt"></i> Preview
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Survey Data Visualization App -->
+          <article class="project-card" data-category="data">
+            <div class="project-image-box">
+              <img src="assets/images/project-crypto.svg" alt="Preview of Data Analytics Chart Dashboard" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="#projects" class="overlay-btn" title="View Dashboard">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <span class="project-badge">Data Analysis</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Interactive Data &amp; Metric Visualizer</h3>
+              <p class="project-description">
+                A statistical dashboard representing survey response trends. Utilizes Excel data imports, chart plotting, and Python-inspired logic to deliver insights into user behavior and engagement numbers.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Data Analysis</span>
+                <span class="tag">Excel</span>
+                <span class="tag">Python Basics</span>
+                <span class="tag">Charts</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a href="#projects" class="btn btn-sm btn-primary">
+                  <i class="fas fa-chart-bar"></i> View Charts
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Weather & Daily Planner UI -->
+          <article class="project-card" data-category="web">
+            <div class="project-image-box">
+              <img src="assets/images/project-weather.svg" alt="Preview of Weather & Daily Assistant Web App" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="#projects" class="overlay-btn" title="Live Preview">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <span class="project-badge">Web Development</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">WeatherPulse - Daily Forecast Portal</h3>
+              <p class="project-description">
+                A clean, accessible web application presenting real-time weather information and 5-day forecasts. Implements responsive CSS cards, dynamic icon switches, and search queries for Kadapa and global cities.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS Grid</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Web API</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a href="#projects" class="btn btn-sm btn-primary">
+                  <i class="fas fa-external-link-alt"></i> Preview
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         RESUME SECTION: Education, Experience & Certificates
+         ============================================== -->
+    <section class="section resume-section" id="resume">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <p class="section-tag"><i class="fas fa-file-alt"></i> Curriculum Vitae</p>
+          <h2 class="section-title">My Resume &amp; Qualifications</h2>
+          <div class="section-divider"></div>
+          <p class="section-lead">A comprehensive look at my education, certifications, and project experience.</p>
+        </div>
+
+        <div class="resume-wrapper">
+          <!-- Download Callout Banner -->
+          <div class="resume-banner">
+            <div class="resume-banner-content">
+              <div class="banner-icon">
+                <i class="fas fa-file-pdf"></i>
+              </div>
+              <div>
+                <h3 class="banner-title">Download Kamuri Pravalika's Resume</h3>
+                <p class="banner-subtitle">Official PDF document including education, skills, community projects, and verified certifications.</p>
+              </div>
+            </div>
+            <div class="resume-banner-action">
+              <a href="assets/resume.pdf" download="Kamuri_Pravalika_Resume.pdf" class="btn btn-primary btn-download" id="download-resume-btn">
+                <i class="fas fa-download"></i>
+                <span>Download Resume (PDF)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Timeline Columns: Education, Projects & Certifications -->
+          <div class="timeline-grid">
+            
+            <!-- Column 1: Education & Academic Projects -->
+            <div class="timeline-column">
+              <h3 class="timeline-column-title">
+                <i class="fas fa-graduation-cap"></i> Education &amp; Projects
+              </h3>
+              
+              <div class="timeline">
+                <!-- Education Item -->
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-period">08/2023 - Present</span>
+                    <h4 class="timeline-role">BTech in Computer Science</h4>
+                    <span class="timeline-company">KLM College of Engineering For Women, Kadapa, Andhra Pradesh</span>
+                    <p class="timeline-desc">
+                      Pursuing undergraduate degree in Computer Science. Focus on web development, programming languages, database management systems, data analysis, and software fundamentals.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Project Item -->
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-period">Academic Project</span>
+                    <h4 class="timeline-role">JNTU Community Service Project</h4>
+                    <span class="timeline-company">Topic: Android Phone Usage by Different People</span>
+                    <p class="timeline-desc">
+                      Performed survey-based analysis of smartphone usage patterns and documented findings. Applied data collection, data analysis, and professional reporting skills.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Web Development Work -->
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-period">Self-Driven Projects</span>
+                    <h4 class="timeline-role">Web Development &amp; SQL Practical Work</h4>
+                    <span class="timeline-company">Independent Practice</span>
+                    <p class="timeline-desc">
+                      Built interactive web pages using HTML, CSS, and JavaScript. Practiced writing relational database schemas, joins, and SQL query optimizations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 2: Certificates & Workshops -->
+            <div class="timeline-column">
+              <h3 class="timeline-column-title">
+                <i class="fas fa-award"></i> Certificates &amp; Workshops
+              </h3>
+              
+              <div class="timeline">
+                <!-- Certificate 1 -->
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-period">Online Certification</span>
+                    <h4 class="timeline-role">IBM Cloud Essentials V3</h4>
+                    <span class="timeline-company">IBM / Online Learning Platform</span>
+                    <p class="timeline-desc">
+                      Completed training covering cloud computing fundamentals, cloud service models (IaaS, PaaS, SaaS), cloud storage, and deployment essentials.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-period">Online Certification</span>
+                    <h4 class="timeline-role">Excel for Beginners</h4>
+                    <span class="timeline-company">Online Learning Platform</span>
+                    <p class="timeline-desc">
+                      Gained proficiency in spreadsheets, data organization, formulas, sorting, filtering, and chart visualization for analytical data reporting.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-period">Online Certification</span>
+                    <h4 class="timeline-role">English Language for Competitive Exams</h4>
+                    <span class="timeline-company">Online Learning Certification</span>
+                    <p class="timeline-desc">
+                      Strengthened grammar, technical vocabulary, reading comprehension, and professional written communication skills.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Workshop 4 -->
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-period">Workshop Participation</span>
+                    <h4 class="timeline-role">Quantum Fundamentals Workshop</h4>
+                    <span class="timeline-company">Academic Tech Event</span>
+                    <p class="timeline-desc">
+                      Participated in hands-on foundational sessions exploring principles of quantum computing and emerging next-generation technology architectures.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         CONTACT SECTION: Contact Info from Resume
+         ============================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <p class="section-tag"><i class="fas fa-paper-plane"></i> Let's Connect</p>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-divider"></div>
+          <p class="section-lead">Have an internship, job opportunity, or collaboration in mind? Reach out to me directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Information Cards -->
+          <div class="contact-info">
+            <h3 class="contact-info-title">Contact Information</h3>
+            <p class="contact-info-subtitle">
+              Feel free to connect via email or phone. I look forward to discussing software and web development opportunities.
+            </p>
+
+            <div class="contact-cards-list">
+              <!-- Email Card -->
+              <div class="contact-card">
+                <div class="contact-card-icon icon-email">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Email</span>
+                  <a href="mailto:kamuripravali@gmail.com" class="contact-card-value">kamuripravali@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="contact-card">
+                <div class="contact-card-icon icon-phone">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Phone</span>
+                  <a href="tel:9390958926" class="contact-card-value">+91 9390958926</a>
+                </div>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-card">
+                <div class="contact-card-icon icon-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Location</span>
+                  <span class="contact-card-value">Kadapa, Andhra Pradesh, India</span>
+                </div>
+              </div>
+
+              <!-- College & Degree Card -->
+              <div class="contact-card">
+                <div class="contact-card-icon icon-status">
+                  <i class="fas fa-university"></i>
+                </div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Institution</span>
+                  <span class="contact-card-value">KLM College of Engineering For Women</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media Profiles -->
+            <div class="contact-socials-box">
+              <h4 class="socials-box-title">Connect &amp; Follow:</h4>
+              <div class="social-icons">
+                <a href="mailto:kamuripravali@gmail.com" aria-label="Email" class="social-link" title="Email Me">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:9390958926" aria-label="Phone" class="social-link" title="Call Me">
+                  <i class="fas fa-phone-alt"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link" title="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <h3 class="contact-form-title">Send Me a Message</h3>
+            
+            <!-- Success / Alert message placeholder -->
+            <div id="form-alert" class="form-alert" role="alert" style="display: none;"></div>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <!-- Name & Email Row -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fas fa-user input-icon"></i>
+                    <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Ramesh Kumar" required>
+                  </div>
+                  <span class="error-msg" id="name-error">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Your Email <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fas fa-envelope input-icon"></i>
+                    <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. ramesh@example.com" required>
+                  </div>
+                  <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                </div>
+              </div>
+
+              <!-- Subject Input -->
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fas fa-heading input-icon"></i>
+                  <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Job Opportunity / Project Collaboration" required>
+                </div>
+                <span class="error-msg" id="subject-error">Please provide a subject</span>
+              </div>
+
+              <!-- Message Textarea -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <textarea id="contact-message" name="message" rows="5" class="form-textarea" placeholder="Hello Pravalika, I would like to discuss..." required></textarea>
+                </div>
+                <span class="error-msg" id="message-error">Please write your message</span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <i class="fas fa-paper-plane btn-icon"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================================
+       FOOTER: Copyright, Quick Links & Back to Top
+       ============================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Footer Top Info -->
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo footer-logo">
+            <span class="logo-symbol">&lt;/&gt;</span>
+            <span class="logo-text">Pravalika<span class="logo-highlight">Dev</span></span>
+          </a>
+          <p class="footer-tagline">
+            Motivated Computer Science student &amp; Web Developer at KLM College of Engineering For Women. Focused on building clean, user-friendly digital solutions.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-nav">
+          <h4 class="footer-nav-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact Footer -->
+        <div class="footer-contact-summary">
+          <h4 class="footer-nav-title">Get in Touch</h4>
+          <p><i class="fas fa-envelope"></i> kamuripravali@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i> +91 9390958926</p>
+          <p><i class="fas fa-map-marker-alt"></i> Kadapa, Andhra Pradesh, India</p>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> <strong>Kamuri Pravalika</strong>. Built with HTML5 &amp; CSS3. All rights reserved.
+        </p>
+
+        <!-- Social Links in Footer -->
+        <div class="footer-socials">
+          <a href="mailto:kamuripravali@gmail.com" aria-label="Email" class="social-link-sm" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:9390958926" aria-label="Phone" class="social-link-sm" title="Call">
+            <i class="fas fa-phone-alt"></i>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link-sm" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link-sm" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Back To Top Floating Button -->
+    <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Scroll back to top" title="Scroll to Top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
